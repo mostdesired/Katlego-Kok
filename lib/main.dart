@@ -26,7 +26,12 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class SplashScreenPage extends StatelessWidget {
+class SplashScreenPage extends StatefulWidget {
+  @override
+  State<SplashScreenPage> createState() => _SplashScreenPageState();
+}
+
+class _SplashScreenPageState extends State<SplashScreenPage> {
   @override
   Widget build(BuildContext context) {
     return Container(color: Colors.yellow, child: FlutterLogo(size: MediaQuery.of(context).size.height));
