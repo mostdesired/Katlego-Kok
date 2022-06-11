@@ -13,11 +13,23 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: _title,
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+      ),
       home: Scaffold(
         appBar: AppBar(title: const Text(_title)),
         body: const MyStatefulWidget(),
       ),
+      //home: SplashScreenPage(),
     );
+  }
+}
+
+class SplashScreenPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(color: Colors.yellow, child: FlutterLogo(size: MediaQuery.of(context).size.height));
   }
 }
 
