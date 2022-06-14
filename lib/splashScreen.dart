@@ -8,6 +8,21 @@ class SplashScreen extends StatefulWidget {
 }
 
 class SplashScreenState extends State<SplashScreen> {
+  @verride
+  void splashScreeState() {
+    super.splashScreenState();
+    startTimer();
+  }
+
+  startTimer() async {
+    var duration = Duration(seconds: 3);
+    return Timer(duration, loginRoute);
+  }
+
+  loginRoute() {
+    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => MyStatefulWidget()));
+  }
+
   @override
   Widget build(BuildContext context) {
     return initWidget();
@@ -17,11 +32,11 @@ class SplashScreenState extends State<SplashScreen> {
     return Scaffold(
         body: Stack(children: [
       Container(
-        color: Colors.blue,
+        color: Colors.white,
       ),
       Center(
         child: Container(
-          child: Image.asset("images/logo.jpg"),
+          child: Image.asset("images/logo(1).jpg"),
         ),
       ),
     ]));
