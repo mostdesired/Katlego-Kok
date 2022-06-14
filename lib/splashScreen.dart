@@ -9,15 +9,15 @@ class SplashScreen extends StatefulWidget {
 }
 
 class SplashScreenState extends State<SplashScreen> {
-  @override
-  void splashScreenState() {
-    super.splashScreenState;
-    startTimer();
-  }
+  //@override
+   /void splashScreenState() {
+    //super.splashScreenState;
+    //startTimer();
+  //}
 
   startTimer() async {
-    duration(seconds: 3);
-    return startTimer(duration, loginRoute);
+    //duration(seconds: 3);
+    //return startTimer(duration, loginRoute);
   }
 
   loginRoute() {
