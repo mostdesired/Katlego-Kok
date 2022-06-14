@@ -21,7 +21,7 @@ class SplashScreenState extends State<SplashScreen> {
       ),
       Center(
         child: Container(
-          child: Image.asset("assets/logo.jpg"),
+          child: Image.asset("images/logo.jpg"),
         ),
       ),
     ]));
