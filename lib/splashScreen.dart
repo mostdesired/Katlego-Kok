@@ -10,13 +10,13 @@ class SplashScreen extends StatefulWidget {
 
 class SplashScreenState extends State<SplashScreen> {
   @override
-  void splashscreenstate() {
-    super.splashscreenstate();
+  void splashScreenState() {
+    super.splashScreenState;
     startTimer();
   }
 
   startTimer() async {
-    var duration = Duration(seconds: 3);
+    duration(seconds: 3);
     return startTimer(duration, loginRoute);
   }
 
