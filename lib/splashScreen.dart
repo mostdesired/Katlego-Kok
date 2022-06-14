@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-//import 'async.dart';
+import 'loginscreen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -10,14 +10,14 @@ class SplashScreen extends StatefulWidget {
 
 class SplashScreenState extends State<SplashScreen> {
   @override
-  void splashScreeState() {
+  void splashScreenState() {
     super.splashScreenState();
     startTimer();
   }
 
   startTimer() async {
     var duration = Duration(seconds: 3);
-    return Timer(duration, loginRoute);
+    return startTimer(duration, loginRoute);
   }
 
   loginRoute() {
@@ -37,7 +37,7 @@ class SplashScreenState extends State<SplashScreen> {
       ),
       Center(
         child: Container(
-          child: Image.asset("images/logo(1).jpg"),
+          child: Image.asset("images/logo.jpg"),
         ),
       ),
     ]));
