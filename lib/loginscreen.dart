@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
 import 'dashboard.dart';
-import 'splashScreen.dart';
-
-//void main() => runApp(const MyApp());
 
 const String _title = 'Login Page';
 
@@ -14,7 +11,6 @@ Widget build(BuildContext context) {
     theme: ThemeData(
       primarySwatch: Colors.blue,
     ),
-    home: SplashScreen(),
   );
 }
 
