@@ -4,22 +4,18 @@ import 'splashScreen.dart';
 
 //void main() => runApp(const MyApp());
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+const String _title = 'Login Page';
 
-  static const String _title = 'Login Page';
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: _title,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: SplashScreen(),
-    );
-  }
+@override
+Widget build(BuildContext context) {
+  return MaterialApp(
+    debugShowCheckedModeBanner: false,
+    title: _title,
+    theme: ThemeData(
+      primarySwatch: Colors.blue,
+    ),
+    home: SplashScreen(),
+  );
 }
 
 class MyStatefulWidget extends StatefulWidget {

@@ -19,9 +19,7 @@ class SplashScreenState extends State<SplashScreen> {
     return Scaffold(
         body: Stack(children: [
       Container(
-        decoration: BoxDecoration(
-          Colors.blue,
-        ),
+        color: Colors.yellow[100],
       ),
       Center(
         child: Container(
