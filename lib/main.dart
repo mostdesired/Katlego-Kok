@@ -11,21 +11,23 @@ class MyApp extends StatelessWidget {
       //home: SplashScreen(),
     );
   }
-
 }
- @override
-  Widget build(BuildContext context) {
-    return initWidget();
-  }
+
+@override
+Widget build(BuildContext context) {
+  return initWidget();
+}
+
 initWidget() {
-    return Scaffold(
-        body: Stack(children: [
-      Container(
-        color: Colors.white,
+  return Scaffold(
+      body: Stack(children: [
+    Container(
+      color: Colors.white,
+    ),
+    Center(
+      child: Container(
+        child: Image.asset("images/logo.jpg"),
       ),
-      Center(
-        child: Container(
-          child: Image.asset("images/logo.jpg"),
-        ),
-      ),
-    ]));
+    ),
+  ]));
+}
