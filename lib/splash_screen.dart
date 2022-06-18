@@ -16,7 +16,7 @@ class SplashScreenState extends State<SplashScreen> {
   }
 
   startTimer() async {
-    //duration:(sec:3);
+    var duration = Duration(seconds: 3);
     return startTimer();
   }
 
