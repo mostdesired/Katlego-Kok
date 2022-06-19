@@ -1,7 +1,14 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-//import 'package:myflutterapp/loginscreen.dart';
+import 'loginscreen.dart';
+import 'dart:async';
 
 void main() => runApp(MyApp());
+
+class _MyApp extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() => MyAppState();
+}
 
 class MyApp extends StatelessWidget {
   @override
@@ -20,6 +27,32 @@ class MyApp extends StatelessWidget {
         ),
       ])),
     );
+  }
+}
+
+class MyAppState extends State<_MyApp> {
+  @override
+  void initState() {
+    super.initState();
+    startTimer();
+  }
+
+  startTimer() async {
+    var duration = Duration(seconds: 3);
+    return startTimer();
+  }
+
+  loginRoute() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => MyStatefulWidget()),
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    throw UnimplementedError();
   }
 }
 
