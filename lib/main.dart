@@ -5,10 +5,8 @@ import 'dart:async';
 
 void main() => runApp(MyApp());
 
-class _MyApp extends StatefulWidget {
-  @override
-  State<StatefulWidget> createState() => MyAppState();
-}
+//class _MyApp extends StatefulWidget {
+//@override
 
 class MyApp extends StatelessWidget {
   @override
@@ -27,34 +25,36 @@ class MyApp extends StatelessWidget {
         ),
       ])),
     );
-  }
-}
 
-class MyAppState extends State<_MyApp> {
+    loginRoute() {
+      var push = Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => const MyStatefulWidget()),
+      );
+    }
+  }
+
   @override
   void initState() {
-    super.initState();
-    startTimer();
+    //super.initState();
+    startTimer(duration, loginRoute);
   }
 
   startTimer() async {
     var duration = Duration(seconds: 3);
     return startTimer();
   }
+}
 
-  loginRoute() {
-    Navigator.push(
-      context,
-      MaterialPageRoute(builder: (context) => MyStatefulWidget()),
-    );
-  }
+/*class MyAppState extends State<_MyApp> {
+  
 
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
     throw UnimplementedError();
   }
-}
+}*/
 
 //class SplashScreen extends StatefulWidget {
 //const SplashScreen({Key? key}) : super(key: key);
