@@ -5,11 +5,22 @@ import 'dart:async';
 
 void main() => runApp(MyApp());
 
-//class _MyApp extends StatefulWidget {
-//@override
+ class MyApp extends StatefulWidget {
+ @override
+ _MyAppState createState() => new _MyAppState();
 
-class MyApp extends StatelessWidget {
+ }
+
+class _MyAppState extends State<MyApp> {
   @override
+void initState(){
+  super.initState();
+  new Future.delayed(const Duration(seconds: 3));
+  () async => Navigator.push(context, MaterialPageRoute(builder: (context) => MyStatefulWidget()),
+  ));;
+}
+
+@override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
@@ -20,83 +31,10 @@ class MyApp extends StatelessWidget {
         ),
         Center(
           child: Container(
-            child: Image.asset("images/logo.jpg"),
-          ),
+          child: Image.asset("images/logo.jpg"),
         ),
-      ])),
+      ]
+      )),
     );
-
-    loginRoute() {
-      var push = Navigator.push(
-        context,
-        MaterialPageRoute(builder: (context) => const MyStatefulWidget()),
-      );
-    }
-  }
-
-  @override
-  void initState() {
-    //super.initState();
-    startTimer(duration, loginRoute);
-  }
-
-  startTimer() async {
-    var duration = Duration(seconds: 3);
-    return startTimer();
-  }
+   }
 }
-
-/*class MyAppState extends State<_MyApp> {
-  
-
-  @override
-  Widget build(BuildContext context) {
-    // TODO: implement build
-    throw UnimplementedError();
-  }
-}*/
-
-//class SplashScreen extends StatefulWidget {
-//const SplashScreen({Key? key}) : super(key: key);
-
-//@override
-
-///State<StatefulWidget> createState() => SplashScreenState();
-//}
-
-//class SplashScreenState extends State<SplashScreen> {
-//@override
-//void initState() {
-//super.initState();
-//startTimer();
-// }
-
-/*startTimer() async {
-    var duration = Duration(seconds: 3);
-    return startTimer();
-  }
-
-  loginRoute() {
-    Navigator.pushReplacement(
-      context,
-      MaterialPageRoute(builder: (context) => MyStatefulWidget()),
-    );
-  }*/
-
-/*@override
-Widget build(BuildContext context) {
-  //return initWidget();
-}*/
-
-/*initWidget() {
-  return Scaffold(
-      body: Stack(children: [
-    Container(
-      color: Colors.white,
-    ),
-    Center(
-      child: Container(
-        child: Image.asset("images/logo.jpg"),
-      ),
-    ),
-  ]));*/
