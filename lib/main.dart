@@ -8,7 +8,17 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(),
+      home: Scaffold(
+          body: Stack(children: [
+        Container(
+          color: Colors.white,
+        ),
+        Center(
+          child: Container(
+            child: Image.asset("images/logo.jpg"),
+          ),
+        ),
+      ])),
     );
   }
 }
@@ -16,7 +26,7 @@ class MyApp extends StatelessWidget {
 //class SplashScreen extends StatefulWidget {
 //const SplashScreen({Key? key}) : super(key: key);
 
-@override
+//@override
 
 ///State<StatefulWidget> createState() => SplashScreenState();
 //}
@@ -40,12 +50,12 @@ class MyApp extends StatelessWidget {
     );
   }*/
 
-@override
+/*@override
 Widget build(BuildContext context) {
-  return initWidget();
-}
+  //return initWidget();
+}*/
 
-initWidget() {
+/*initWidget() {
   return Scaffold(
       body: Stack(children: [
     Container(
@@ -56,5 +66,4 @@ initWidget() {
         child: Image.asset("images/logo.jpg"),
       ),
     ),
-  ]));
-}
+  ]));*/
