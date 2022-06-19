@@ -33,8 +33,10 @@ void initState(){
           child: Container(
           child: Image.asset("images/logo.jpg"),
         ),
-      ]
-      )),
+     
+      )
+       ]),
+    )
     );
    }
 }
