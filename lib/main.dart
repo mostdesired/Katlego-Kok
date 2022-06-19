@@ -17,7 +17,7 @@ void initState(){
   super.initState();
   new Future.delayed(const Duration(seconds: 3));
   () async => Navigator.push(context, MaterialPageRoute(builder: (context) => MyStatefulWidget()),
-  ));;
+  );)
 }
 
 @override
