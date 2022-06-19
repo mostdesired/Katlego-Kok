@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:myflutterapp/loginscreen.dart';
+//import 'package:myflutterapp/loginscreen.dart';
 
 void main() => runApp(MyApp());
 
@@ -8,26 +8,27 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SplashScreen(),
+      //home: SplashScreen(),
     );
   }
 }
 
-class SplashScreen extends StatefulWidget {
-  const SplashScreen({Key? key}) : super(key: key);
+//class SplashScreen extends StatefulWidget {
+//const SplashScreen({Key? key}) : super(key: key);
 
-  @override
-  State<StatefulWidget> createState() => SplashScreenState();
-}
+@override
 
-class SplashScreenState extends State<SplashScreen> {
-  @override
-  void initState() {
-    super.initState();
-    startTimer();
-  }
+///State<StatefulWidget> createState() => SplashScreenState();
+//}
 
-  startTimer() async {
+//class SplashScreenState extends State<SplashScreen> {
+//@override
+//void initState() {
+//super.initState();
+//startTimer();
+// }
+
+/*startTimer() async {
     var duration = Duration(seconds: 3);
     return startTimer();
   }
@@ -37,24 +38,23 @@ class SplashScreenState extends State<SplashScreen> {
       context,
       MaterialPageRoute(builder: (context) => MyStatefulWidget()),
     );
-  }
+  }*/
 
-  @override
-  Widget build(BuildContext context) {
-    return initWidget();
-  }
+@override
+Widget build(BuildContext context) {
+  return initWidget();
+}
 
-  initWidget() {
-    return Scaffold(
-        body: Stack(children: [
-      Container(
-        color: Colors.white,
+initWidget() {
+  return Scaffold(
+      body: Stack(children: [
+    Container(
+      color: Colors.white,
+    ),
+    Center(
+      child: Container(
+        child: Image.asset("images/logo.jpg"),
       ),
-      Center(
-        child: Container(
-          child: Image.asset("images/logo.jpg"),
-        ),
-      ),
-    ]));
-  }
+    ),
+  ]));
 }
