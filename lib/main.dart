@@ -13,14 +13,14 @@ void main() => runApp(MyApp());
 
 class _MyAppState extends State<MyApp> {
   @override
-void initState(){
+ void initState(){
   super.initState();
   new Future.delayed(const Duration(seconds: 3));
   () async => Navigator.push(context, MaterialPageRoute(builder: (context) => MyStatefulWidget()),
-  );)
-}
+  ));
+ }
 
-@override
+  @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
@@ -33,10 +33,10 @@ void initState(){
           child: Container(
           child: Image.asset("images/logo.jpg"),
         ),
-     
       )
        ]),
-    )
-  );
+     )
+    );
+  }
 }
 
