@@ -6,6 +6,8 @@ import 'dart:async';
 void main() => runApp(MyApp());
 
 class MyApp extends StatefulWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   _MyAppState createState() => new _MyAppState();
 }
