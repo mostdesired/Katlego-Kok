@@ -33,8 +33,11 @@ class _MyAppState extends State<MyApplication> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        child: Image.asset("images/logo.jpg"),
+      body: Padding(
+        padding: EdgeInsets.only(top: 400.0),
+        child: Container(
+          child: Image.asset("images/logo.jpg"),
+        ),
       ),
     );
   }
