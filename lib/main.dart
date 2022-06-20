@@ -33,16 +33,9 @@ class _MyAppState extends State<MyApplication> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Stack(children: [
-        Container(
-          color: Colors.white,
-        ),
-        Center(
-          child: Container(
-            child: Image.asset("images/logo.jpg"),
-          ),
-        )
-      ]),
+      body: Container(
+        child: Image.asset("images/logo.jpg"),
+      ),
     );
   }
 }
