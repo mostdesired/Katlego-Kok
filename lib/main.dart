@@ -16,11 +16,7 @@ class _MyAppState extends State<MyApp> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(Duration(seconds: 3));
-    () async => Navigator.pushReplacement(
-          context,
-          MaterialPageRoute(builder: (context) => MyStatefulWidget()),
-        );
+    Timer(Duration(seconds: 3), () => Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (BiuldContext context) => MyStatefulWidget())));
   }
 
   @override
