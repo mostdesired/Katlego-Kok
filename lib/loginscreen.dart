@@ -28,7 +28,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Padding(
+      body: Padding(
         padding: const EdgeInsets.all(10),
         child: ListView(
           children: <Widget>[
