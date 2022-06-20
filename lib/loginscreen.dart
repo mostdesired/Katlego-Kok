@@ -46,13 +46,15 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
           ),
           Container(
             padding: const EdgeInsets.all(10),
-            child: TextField(
-              controller: nameController,
-              decoration: const InputDecoration(
-                border: OutlineInputBorder(),
-                labelText: 'UserName',
+            children: [
+              TextField(
+                controller: nameController,
+                decoration: const InputDecoration(
+                  border: OutlineInputBorder(),
+                  labelText: 'UserName',
+                ),
               ),
-            ),
+            ],
           ),
           Container(
             padding: const EdgeInsets.all(10),
