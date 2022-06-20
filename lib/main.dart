@@ -15,7 +15,7 @@ class _MyAppState extends State<MyApp> {
   void initState() {
     super.initState();
     new Future.delayed(const Duration(seconds: 3));
-    () async => Navigator.push(
+    () async => Navigator.pushReplacement(
           context,
           MaterialPageRoute(builder: (context) => MyStatefulWidget()),
         );
