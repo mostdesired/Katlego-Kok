@@ -21,19 +21,17 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        home: Scaffold(
-          body: Stack(children: [
-            Container(
-              color: Colors.white,
-            ),
-            Center(
-              child: Container(
-                child: Image.asset("images/logo.jpg"),
-              ),
-            )
-          ]),
-        ));
+    return Scaffold(
+      body: Stack(children: [
+        Container(
+          color: Colors.white,
+        ),
+        Center(
+          child: Container(
+            child: Image.asset("images/logo.jpg"),
+          ),
+        )
+      ]),
+    );
   }
 }
