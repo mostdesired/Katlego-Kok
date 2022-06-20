@@ -35,7 +35,7 @@ class _MyAppState extends State<MyApplication> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(
-        padding: EdgeInsets.only(top: 400.0),
+        padding: EdgeInsets.only(top: 65, bottom: 65),
         child: Container(
           child: Image.asset("images/logo.jpg"),
         ),
